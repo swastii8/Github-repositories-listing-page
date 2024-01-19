@@ -9,10 +9,10 @@ Enter the GitHub username, select repositories per page, and optionally provide 
 Click on "Fetch Repositories" to see the GitHub user's profile and repositories.
 
 Technologies Used: 
-HTML
-CSS
-JavaScript
-Bootstrap
+HTML,
+CSS,
+JavaScript,
+Bootstrap,
 JQuery
 
 The project is hosted on GitHub Pages. You can access it [here](https://github.com/swastii8/Github-repositories-listing-page)
