@@ -1,0 +1,185 @@
+
+        body {
+            margin: 20px;
+            font-family: 'Arial',sans-serif;
+            background-color: #f8f9fa;
+        }
+        .loader {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        #repositories {
+            max-height: 500px;
+            overflow-y: auto;
+            background-color: #ffffff;
+            border:1px solid #d1d1d1;
+            border-radius:5px;
+            padding:10px;
+            box-shadow:0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .repo-container {
+            border: 1px solid #d1d1d1;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        
+            
+        }
+        .row .repo-container {
+            margin-right: 0; 
+        }
+        .img-thumbnail {
+            border-radius: 50%; 
+            width: 100%;
+            max-width: 150px; 
+            height: auto; 
+        }
+        .clearfix {
+            clear: both;
+        }
+       
+        
+        h2{
+            color:#007bff;
+        }
+        .form-group{
+            margin-bottom:20px;
+        }
+        .btn-primary{
+            background-color:#007bff;
+            border:none;
+        }
+        .btn-primary:hover{
+            background-color:#0056b3;
+        }
+        .list-group-item{
+            background-color:#f8f9fa;
+            border:1px solid #d1d1d1;
+            border-radius:3px;
+            margin-bottom: 5px;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+         .col-md-6 {
+            flex: 0 0 48%; /* Adjust as needed */
+            max-width: 48%; /* Adjust as needed */
+         }
+        
+        .col-md-6:not(:last-child) {
+            margin-right: 20px;
+        }
+        .col-md-4 {
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+        
+        .col-md-8 {
+            flex: 0 0 66.666667%;
+            max-width: 67.6666666%;
+        }
+       
+
+        .row.text-center {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+
+        .btn-group {
+            display: flex;
+    justify-content: space-between;
+            
+        }
+
+        .btn-group button {
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+        .row mt-4{
+            justify-content: center;
+
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px; /* Adjust as needed */
+        }
+        
+        .pagination ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .pagination ul li {
+            display: inline-block;
+            margin-right: 10px; /* Adjust as needed */
+        }
+        
+        .pagination.justify-content-end ul {
+            margin-left: auto;
+        }
+        
+        .pagination.justify-content-start ul {
+            margin-right: auto;
+        }
+        .pagination ul li.active {
+            font-weight: bold; /* Make the active page number bold */
+        }
+        
+        .pagination ul li.active a {
+           
+            color: #000; /* Change the color to black */
+     
+           background-color: #fff; /* Optionally, set background color to white */
+
+        }
+        .pagination ul li a:hover {
+            color: #000;
+    background-color: #fff;
+            text-decoration: none; /* Remove underline on hover */
+        }
+        .active-page {
+            font-weight: bold;
+            color: black; /* Set the desired color for the active page */
+        }
+        .older-btn,
+        .newer-btn {
+            /* Adjust as needed */
+            border-radius: 25px; /* Adjust the value as needed for more or less oval shape */
+             padding: 10px 20px; /* Adjust the padding for the desired button size */
+             background-color: #fff;
+             color: #007bff;
+             font-size: 18px;
+             
+            
+        
+              margin: 5px;
+            flex: 1;
+        }
+        .older-btn i,
+        .newer-btn i {
+            margin-right: 5px; /* Adjust the margin between the arrow and text */
+        }
+        .older-btn:hover,
+.newer-btn:hover {
+    background-color: #0056b3;
+}
+
+      

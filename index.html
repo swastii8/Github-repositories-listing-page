@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repositories Listing page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
+
+</head>
+<body>
+    
+    <div class="container mt-4">
+    <h2 class="mb-4">GitHub Repositories</h2>
+
+    <div class="form-group">
+        <label for="username">GitHub Username:</label>
+        <input type="text" class="form-control" id="username" placeholder="Enter GitHub Username">
+    </div>
+    <div class="form-group">
+        <label for="perPage">Repositories per page:</label>
+        <select class="form-control" id="perPage" onchange="fetchRepositories()">
+            <option value="10" selected>10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="search">Search Repositories:</label>
+        <input type="text" class="form-control" id="search" placeholder="Enter search keyword" oninput="fetchProfileAndRepositories()">
+    </div>
+    <button type="button" class="btn btn-primary" onclick="fetchProfileAndRepositories()">Fetch Repositories</button>
+
+    <div id="profile" class="mt-4"></div>
+    <div id="repositories" class="mt-4 row"></div>
+    <div id="loader" class="loader mt-4" style="display: none;"></div>
+    <div id="pagination" class="pagination mt-4"></div>
+  
+        <div class ="row mt-4">
+            <div class="col-md-12 text-center">
+                <div class="btn-group" role="group"></div>
+                <button type="button" class="btn btn-secondary"><<</button>
+                    <button type="button" class="btn btn-secondary">1</button>
+                    <button type="button" class="btn btn-secondary">2</button>
+                    <button type="button" class="btn btn-secondary">3</button>
+                    <button type="button" class="btn btn-secondary">4</button>
+                    <button type="button" class="btn btn-secondary">5</button>
+                    <button type="button" class="btn btn-secondary">6</button>
+                    <button type="button" class="btn btn-secondary">7</button>
+                    <button type="button" class="btn btn-secondary">8</button>
+                    <button type="button" class="btn btn-secondary">9</button>
+                    <button type="button" class="btn btn-secondary">>></button>
+                </div>
+                </div>
+            </div>
+       
+        <div class="row mt-4">
+            <div class="col-md-6 text-center">
+                <button type="button" class="btn btn-secondary older-btn" onclick="changePage('older')">
+                    <i class="fas fa-arrow-left"></i>Older
+                </button>
+            </div>
+            <div class="col-md-6 text-center">
+                <button type="button" class="btn btn-secondary newer-btn" onclick="changePage('newer')">
+                    Newer <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script.js"></script>
+    
+</body>
+</html>
