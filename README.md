@@ -18,7 +18,7 @@ JQuery
 The project is hosted on GitHub Pages. You can access it [here](https://github.com/swastii8/Github-repositories-listing-page)
 
 
-My hosted project [here] (https://swastii8.github.io/Github-repositories-listing-page/)
+My hosted project [here](https://swastii8.github.io/Github-repositories-listing-page/)
 
 
 Contributor: 
